@@ -204,6 +204,12 @@ button {
     width: auto;
 }
 
+.header-logo-comperve {
+    height: 50px;
+    width: auto;
+    margin-left: var(--space-sm);
+}
+
 .brand-title {
     font-size: 1.75rem;
     color: var(--primary);
@@ -682,6 +688,10 @@ button {
     box-shadow: var(--shadow-xl);
 }
 
+.process-card:hover .card-title {
+    color: var(--primary);
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
@@ -758,6 +768,7 @@ button {
 .news-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
+    border-left: 4px solid var(--primary);
 }
 
 .news-content {
@@ -890,6 +901,12 @@ button {
     box-shadow: var(--shadow-lg);
     background: var(--primary);
     color: var(--white);
+}
+
+.quick-card:hover .quick-icon {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    transform: scale(1.1);
 }
 
 .quick-icon {
