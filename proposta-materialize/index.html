@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMPERVE - Comissão Permanente do Vestibular</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar valign-wrapper">
+        <div class="container">
+            <div class="row mb-0">
+                <div class="col s6 valign-wrapper">
+                    <i class="material-icons tiny">phone</i>
+                    <span class="ml-1">(84) 3342-2216</span>
+                    <span class="divider-g"></span>
+                    <i class="material-icons tiny">email</i>
+                    <span class="ml-1">comperve@ufrn.br</span>
+                </div>
+                <div class="col s6 right-align">
+                    <a href="#" class="white-text"><i class="material-icons tiny">facebook</i></a>
+                    <a href="#" class="white-text ml-3"><i class="material-icons tiny">camera_alt</i></a>
+                    <a href="#" class="white-text ml-3"><i class="material-icons tiny">send</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Institucional -->
+    <header class="header-main white">
+        <div class="container">
+            <div class="row valign-wrapper mb-0">
+                <div class="col s2">
+                    <img src="https://www.ufrn.br/imagens/logos/brasao_ufrn.png" alt="UFRN" class="responsive-img" style="max-height: 70px;">
+                </div>
+                <div class="col s8">
+                    <h1 class="brand-title">COMPERVE</h1>
+                    <p class="brand-subtitle">Comissão Permanente do Vestibular</p>
+                </div>
+                <div class="col s2 right-align">
+                    <a href="https://comperve.ufrn.br/candidato" class="btn btn-candidate waves-effect waves-light">
+                        <i class="material-icons left">person</i>Área do Candidato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="nav-main">
+        <div class="nav-wrapper container">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="hide-on-med-and-down">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="processos">Processos Seletivos<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-trigger" href="#!" data-target="concursos">Concursos<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="#">Editais</a></li>
+                <li><a href="#">Resultados</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Calendário</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <form class="search-form right hide-on-med-and-down">
+                <div class="input-field">
+                    <input id="search" type="search" placeholder="Buscar...">
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Dropdowns -->
+    <ul id="processos" class="dropdown-content">
+        <li><a href="#">Graduação</a></li>
+        <li><a href="#">Pós-Graduação</a></li>
+        <li><a href="#">Cursos Técnicos</a></li>
+        <li><a href="#">Educação a Distância</a></li>
+    </ul>
+    <ul id="concursos" class="dropdown-content">
+        <li><a href="#">Professor Efetivo</a></li>
+        <li><a href="#">Técnico Administrativo</a></li>
+        <li><a href="#">Servidores</a></li>
+    </ul>
+
+    <!-- Mobile Sidenav -->
+    <ul class="sidenav" id="mobile-demo">
+        <li><div class="user-view">
+            <div class="background">
+                <div class="gradient-bg"></div>
+            </div>
+            <a href="#user"><img class="circle" src="https://www.ufrn.br/imagens/logos/brasao_ufrn.png"></a>
+            <a href="#name"><span class="white-text name">COMPERVE</span></a>
+        </div></li>
+        <li class="active"><a href="#"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="#"><i class="material-icons">school</i>Processos Seletivos</a></li>
+        <li><a href="#"><i class="material-icons">work</i>Concursos</a></li>
+        <li><a href="#"><i class="material-icons">description</i>Editais</a></li>
+        <li><a href="#"><i class="material-icons">assignment</i>Resultados</a></li>
+        <li><a href="#"><i class="material-icons">newspaper</i>Notícias</a></li>
+        <li><a href="#"><i class="material-icons">event</i>Calendário</a></li>
+        <li><a href="#"><i class="material-icons">help</i>FAQ</a></li>
+        <li><a href="#"><i class="material-icons">info</i>Sobre</a></li>
+        <li><a href="#"><i class="material-icons">contact_mail</i>Contato</a></li>
+        <li><a href="https://comperve.ufrn.br/candidato" class="waves-effect waves-light btn-candidate-mobile">
+            <i class="material-icons left">person</i>Área do Candidato
+        </a></li>
+    </ul>
+
+    <!-- Hero Section with Parallax -->
+    <div class="parallax-container hero-parallax">
+        <div class="parallax"><img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920" alt="Campus UFRN"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <span class="badge-new badge">Em Andamento</span>
+                        <h2 class="hero-title">Vestibular 2026</h2>
+                        <p class="hero-subtitle">Inscrições abertas para o processo seletivo de graduação 2026</p>
+                        <div class="hero-info">
+                            <span class="mr-4"><i class="material-icons tiny">calendar_today</i> 15/01 a 15/03/2026</span>
+                            <span><i class="material-icons tiny">people</i> 12.450 inscritos</span>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#" class="waves-effect waves-light btn-large btn-primary-mz">Ver Editais</a>
+                            <a href="#" class="waves-effect waves-light btn-large btn-outline-white ml-2">Inscrever-se</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Próximos Eventos Sidebar -->
+    <div class="container section">
+        <div class="row">
+            <div class="col s12 l8">
+                <!-- Processos Seletivos em Destaque -->
+                <div class="section-title-mz">
+                    <h3>Processos Seletivos em Destaque</h3>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card process-card-mz">
+                            <div class="card-content">
+                                <span class="badge badge-graduacao">Graduação</span>
+                                <span class="badge badge-aberto right">Aberto</span>
+                                <span class="card-title">Vestibular 2026</span>
+                                <p class="grey-text">Processo seletivo para cursos de graduação presencial</p>
+                                <div class="process-info">
+                                    <div class="valign-wrapper"><i class="material-icons tiny">calendar_today</i>15/01 a 15/03/2026</div>
+                                    <div class="valign-wrapper"><i class="material-icons tiny">school</i>4.500 vagas</div>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ver Detalhes</a>
+                                <a href="#" class="teal-text">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card process-card-mz">
+                            <div class="card-content">
+                                <span class="badge badge-pos">Pós-Graduação</span>
+                                <span class="badge badge-embreve right">Em breve</span>
+                                <span class="card-title">Mestrado Profissional</span>
+                                <p class="grey-text">Programa de pós-graduação stricto sensu</p>
+                                <div class="process-info">
+                                    <div class="valign-wrapper"><i class="material-icons tiny">calendar_today</i>01/04 a 30/04/2026</div>
+                                    <div class="valign-wrapper"><i class="material-icons tiny">school</i>120 vagas</div>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card process-card-mz">
+                            <div class="card-content">
+                                <span class="badge badge-tecnico">Técnico</span>
+                                <span class="badge badge-aberto right">Aberto</span>
+                                <span class="card-title">Cursos Técnicos 2026</span>
+                                <p class="grey-text">Processo seletivo para cursos técnicos integrados</p>
+                                <div class="process-info">
+                                    <div class="valign-wrapper"><i class="material-icons tiny">calendar_today</i>10/02 a 10/04/2026</div>
+                                    <div class="valign-wrapper"><i class="material-icons tiny">school</i>800 vagas</div>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ver Detalhes</a>
+                                <a href="#" class="teal-text">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card process-card-mz">
+                            <div class="card-content">
+                                <span class="badge badge-ead">EAD</span>
+                                <span class="badge badge-aberto right">Aberto</span>
+                                <span class="card-title">Educação a Distância</span>
+                                <p class="grey-text">Cursos de graduação a distância</p>
+                                <div class="process-info">
+                                    <div class="valign-wrapper"><i class="material-icons tiny">calendar_today</i>20/02 a 20/03/2026</div>
+                                    <div class="valign-wrapper"><i class="material-icons tiny">school</i>2.000 vagas</div>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ver Detalhes</a>
+                                <a href="#" class="teal-text">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notícias -->
+                <div class="section-title-mz">
+                    <h3>Notícias Recentes</h3>
+                    <a href="#" class="right link-mz">Ver Todas <i class="material-icons tiny">arrow_forward</i></a>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card news-card-mz">
+                            <div class="card-content">
+                                <span class="grey-text text-darken-1"><i class="material-icons tiny">calendar_today</i> 06/03/2026</span>
+                                <span class="card-title">Exame Nacional de Acesso ao Mestrado Profissional em Letras</span>
+                                <p>Divulgados o Quadro de Vagas para Primeira Chamada e Resultado Geral da Segunda Chamada.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card news-card-mz">
+                            <div class="card-content">
+                                <span class="grey-text text-darken-1"><i class="material-icons tiny">calendar_today</i> 06/03/2026</span>
+                                <span class="card-title">Concurso Público UERN 2025</span>
+                                <p>Retificado resultado da prova escrita corrigindo o arredondamento da média final.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card news-card-mz">
+                            <div class="card-content">
+                                <span class="grey-text text-darken-1"><i class="material-icons tiny">calendar_today</i> 06/03/2026</span>
+                                <span class="card-title">Escola Agrícola de Jundiaí - 4ª Chamada</span>
+                                <p>Divulgado o Resultado Final da 4ª Chamada e a Última Chamada do processo seletivo.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card news-card-mz">
+                            <div class="card-content">
+                                <span class="grey-text text-darken-1"><i class="material-icons tiny">calendar_today</i> 05/03/2026</span>
+                                <span class="card-title">Vagas Residuais 2026.1</span>
+                                <p>Divulgado Resultado da 2ª Chamada do processo seletivo.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#" class="teal-text">Ler mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Editais -->
+                <div class="section-title-mz">
+                    <h3>Editais Publicados</h3>
+                    <a href="#" class="right link-mz">Ver Todos <i class="material-icons tiny">arrow_forward</i></a>
+                </div>
+                <div class="card editais-card-mz">
+                    <table class="striped">
+                        <thead>
+                            <tr>
+                                <th>Nr</th>
+                                <th>Edital</th>
+                                <th>Processo</th>
+                                <th>Data</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>002</td>
+                                <td>Exame Nacional de Acesso ao Mestrado Profissional em Letras</td>
+                                <td>002/2025</td>
+                                <td>06/03/2026</td>
+                                <td><span class="badge-table badge-aberto">Ativo</span></td>
+                                <td><a class="btn-floating btn-small waves-effect waves-light grey lighten-2"><i class="material-icons grey-text text-darken-3">download</i></a></td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>Concurso Público Professor Efetivo - UERN</td>
+                                <td>001/2025</td>
+                                <td>05/03/2026</td>
+                                <td><span class="badge-table badge-aberto">Ativo</span></td>
+                                <td><a class="btn-floating btn-small waves-effect waves-light grey lighten-2"><i class="material-icons grey-text text-darken-3">download</i></a></td>
+                            </tr>
+                            <tr>
+                                <td>2138</td>
+                                <td>Técnico em Música</td>
+                                <td>2025</td>
+                                <td>03/03/2026</td>
+                                <td><span class="badge-table badge-emandamento">Em andamento</span></td>
+                                <td><a class="btn-floating btn-small waves-effect waves-light grey lighten-2"><i class="material-icons grey-text text-darken-3">download</i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col s12 l4">
+                <div class="card sidebar-card-mz">
+                    <div class="card-content">
+                        <span class="card-title">
+                            <i class="material-icons left teal-text">event_available</i>
+                            Próximos Eventos
+                        </span>
+                        <ul class="event-list">
+                            <li class="event-item">
+                                <div class="event-date">10/03</div>
+                                <div class="event-content">
+                                    <strong>Resultado Preliminar</strong>
+                                    <p class="grey-text">Vestibular 2026</p>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="event-date">15/03</div>
+                                <div class="event-content">
+                                    <strong>Encerramento Inscrições</strong>
+                                    <p class="grey-text">Vestibular 2026</p>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="event-date">20/03</div>
+                                <div class="event-content">
+                                    <strong>Divulgação Locais</strong>
+                                    <p class="grey-text">Prova Vestibular</p>
+                                </div>
+                            </li>
+                            <li class="event-item">
+                                <div class="event-date">05/04</div>
+                                <div class="event-content">
+                                    <strong>Data da Prova</strong>
+                                    <p class="grey-text">Vestibular 2026</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="card sidebar-card-mz">
+                    <div class="card-content">
+                        <span class="card-title">
+                            <i class="material-icons left teal-text">link</i>
+                            Acesso Rápido
+                        </span>
+                        <div class="quick-links-mz">
+                            <a href="#" class="quick-link-item">
+                                <i class="material-icons">assignment_return</i>
+                                <span>Resultado de Recursos</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="material-icons">receipt_long</i>
+                                <span>2ª Via de Boleto</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="material-icons">help</i>
+                                <span>Perguntas Frequentes</span>
+                            </a>
+                            <a href="#" class="quick-link-item">
+                                <i class="material-icons">email</i>
+                                <span>Fale Conosco</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer footer-mz">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 s12">
+                    <h5 class="white-text">COMPERVE</h5>
+                    <p class="grey-text text-lighten-4">Comissão Permanente do Vestibular da Universidade Federal do Rio Grande do Norte</p>
+                    <div class="social-links">
+                        <a href="#" class="white-text"><i class="material-icons">facebook</i></a>
+                        <a href="#" class="white-text ml-3"><i class="material-icons">camera_alt</i></a>
+                        <a href="#" class="white-text ml-3"><i class="material-icons">send</i></a>
+                        <a href="#" class="white-text ml-3"><i class="material-icons">play_circle_filled</i></a>
+                    </div>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Contato</h5>
+                    <ul class="grey-text text-lighten-4">
+                        <li class="mb-2"><i class="material-icons tiny">location_on</i> Campus Central, Natal/RN</li>
+                        <li class="mb-2"><i class="material-icons tiny">phone</i> (84) 3342-2216</li>
+                        <li class="mb-2"><i class="material-icons tiny">email</i> comperve@ufrn.br</li>
+                        <li><i class="material-icons tiny">schedule</i> Seg a Sex: 8h às 17h</li>
+                    </ul>
+                </div>
+                <div class="col l4 s12">
+                    <h5 class="white-text">Links Úteis</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-4" href="#">Portal UFRN</a></li>
+                        <li><a class="grey-text text-lighten-4" href="#">Prograd</a></li>
+                        <li><a class="grey-text text-lighten-4" href="#">Secretaria de Educação</a></li>
+                        <li><a class="grey-text text-lighten-4" href="#">Mapa do Site</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row mb-0">
+                    <div class="col s6">© 2026 COMPERVE - Universidade Federal do Rio Grande do Norte</div>
+                    <div class="col s6 right-align">Desenvolvido por COMPERVE/UFRN</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

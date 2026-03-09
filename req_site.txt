@@ -1,0 +1,214 @@
+Você é um especialista sênior em UX/UI, arquitetura de informação, design de portais institucionais governamentais e design systems. Sua tarefa é propor a **remodelação completa** de um site institucional existente, preservando sua identidade visual, mas modernizando totalmente sua estrutura, usabilidade e aparência.
+
+O site atual é: https://www.comperve.ufrn.br/
+
+Analise o site atual e use-o apenas como **referência de identidade visual e propósito institucional**, mas **não copie a estrutura atual**. O objetivo é propor um **portal moderno, organizado, acessível e escalável**.
+
+CONTEXTO DO SITE
+O site pertence à COMPERVE (Comissão Permanente do Vestibular da UFRN), responsável por processos seletivos como vestibulares, concursos, seleções e exames educacionais.
+
+O novo site deve funcionar como um **portal público institucional**, com acesso fácil às informações de processos seletivos e com **um link claro para a Área do Candidato (sistema separado)**.
+
+OBJETIVO
+Gerar uma proposta completa de:
+1. Estrutura do portal (arquitetura da informação)
+2. Layout das principais páginas
+3. Experiência do usuário
+4. Paleta de cores
+5. Tipografia
+6. Componentes de interface
+7. Diretrizes de design system
+
+IMPLEMENTAÇÃO DA PROPOSTA
+
+Para a demonstração do redesign, gere **um protótipo funcional simples composto por:**
+
+- 1 arquivo HTML
+- 1 arquivo CSS
+- 1 arquivo JavaScript
+
+Não utilizar frameworks de build, bundlers ou dependências complexas.
+
+O objetivo é apenas um **protótipo visual funcional do portal**.
+
+PROCESSO DE CRIAÇÃO
+
+1. Crie **3 propostas diferentes de redesign**.
+
+2. Cada proposta deve ter:
+   - Conceito visual
+   - Paleta de cores
+   - Estrutura do portal
+   - Layout da Home
+
+3. Pelo menos:
+   - **Uma proposta deve usar Bootstrap**
+   - **Uma proposta deve usar Materialize**
+   - **Uma proposta deve usar apenas CSS puro (sem framework)**
+
+4. Após criar as três propostas:
+   - Compare as três soluções considerando:
+     - Clareza visual
+     - Organização das informações
+     - Usabilidade
+     - Adequação a portal institucional
+     - Facilidade de manutenção
+
+5. Escolha **a melhor proposta**.
+
+6. Gere ** o protótipo HTML + CSS + JS de cada solução**.
+
+7. Além disso, gere um **arquivo adicional chamado `design-conventions.md`** contendo as **convenções utilizadas no design vencedor**.
+
+8. Faça também um relatório comparativo em .md mostrando as diferenças de cada solução.
+
+9. Cada solução deve ser alocada em pastas separadas e devem estar prontas para serem executadas quando executar o index.html.
+
+CONTEÚDO DO ARQUIVO design-conventions.md(crie um para cada proposta)
+
+O arquivo deve documentar:
+
+- Paleta de cores oficial
+- Tipografia utilizada
+- Escala tipográfica
+- Espaçamentos padrão
+- Convenções de layout
+- Convenções de nomenclatura de classes CSS
+- Estrutura de componentes
+- Padrões de botões
+- Padrões de cards
+- Padrões de tabelas
+- Padrões de formulários
+- Padrões de navegação
+- Padrões de responsividade
+- Boas práticas de acessibilidade adotadas
+- Como reutilizar os componentes no futuro
+
+IDENTIDADE VISUAL
+
+- Manter coerência com a identidade visual existente
+- Usar referências visuais da UFRN quando apropriado
+- Modernizar o visual com padrões atuais de design
+- Interface limpa, institucional e confiável
+
+PALETA DE CORES
+
+Gerar uma paleta completa contendo:
+
+- Cor primária
+- Cor primária escura
+- Cor primária clara
+- Cor secundária
+- Cor de destaque
+- Cores neutras (escala de cinza)
+- Cores de feedback (sucesso, aviso, erro, informação)
+
+Para cada cor fornecer:
+
+- HEX
+- RGB
+- Uso recomendado
+
+TIPOGRAFIA
+
+Definir:
+
+- Fonte para títulos
+- Fonte para textos
+- Hierarquia tipográfica (H1–H6)
+- Tamanhos e espaçamentos recomendados
+
+ARQUITETURA DO PORTAL
+
+Propor uma estrutura moderna contendo seções como:
+
+Home  
+Processos Seletivos  
+Concursos  
+Seleções  
+Publicações / Editais  
+Notícias  
+Calendários  
+Resultados  
+Perguntas Frequentes  
+Sobre a COMPERVE  
+Contato  
+
+Também incluir:
+
+Botão de destaque para:
+
+**"Área do Candidato"**
+
+A área do candidato é um sistema separado e deve ser apenas um **link destacado no portal**.
+
+PÁGINAS A SEREM PROJETADAS
+
+Descrever layout e seções de:
+
+- Home
+- Página de Processo Seletivo
+- Página de Notícias
+- Página de Edital
+- Página de Resultados
+- Página institucional (Sobre)
+- Página de FAQ
+
+Para cada página explicar:
+
+- Estrutura
+- Componentes
+- Hierarquia visual
+
+COMPONENTES DE INTERFACE
+
+Definir componentes reutilizáveis como:
+
+- Header institucional
+- Mega menu ou menu principal
+- Cards de processos seletivos
+- Cards de notícias
+- Listagem de editais
+- Tabela de resultados
+- Botões
+- Alertas
+- Banners
+- Breadcrumbs
+- Paginação
+- Busca
+
+ACESSIBILIDADE
+
+Seguir boas práticas de:
+
+- WCAG
+- Contraste de cores
+- Navegação por teclado
+- Legibilidade
+
+RESPONSIVIDADE
+
+Descrever comportamento em:
+
+- Desktop
+- Tablet
+- Mobile
+
+RESULTADO FINAL ESPERADO
+
+Organize a resposta nas seguintes seções:
+
+1. Análise breve do site atual
+2. Proposta 1
+3. Proposta 2
+4. Proposta 3
+5. Comparação entre as propostas
+6. Relatório comparativo das 3 propostas
+7. Paleta de cores final
+8. Tipografia
+9. Estrutura do portal
+10. Protótipo final contendo(para cada proposta):
+   - HTML completo
+   - CSS completo
+   - JavaScript completo
+11. Arquivo `design-conventions.md` (para cada proposta)

@@ -1,0 +1,413 @@
+:root {
+    --primary: #005dac;
+    --primary-dark: #003d7a;
+    --primary-light: #4d8dcc;
+    --secondary: #6c757d;
+    --accent: #e6a817;
+    --accent-dark: #c48c0f;
+    --success: #198754;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --info: #0dcaf0;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--gray-800);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.top-bar {
+    background-color: var(--primary) !important;
+    font-size: 0.875rem;
+}
+
+.header-institutional {
+    border-bottom: 3px solid var(--primary);
+}
+
+.title-main {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    font-weight: 400;
+}
+
+.btn-candidate {
+    background-color: var(--accent);
+    color: var(--dark);
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.btn-candidate:hover {
+    background-color: var(--accent-dark);
+    color: var(--dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.navbar {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--white);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.search-form .form-control {
+    border: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    padding: 0.5rem 1rem;
+}
+
+.search-form .btn-search {
+    background-color: var(--accent);
+    color: var(--dark);
+    border: none;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-form .btn-search:hover {
+    background-color: var(--accent-dark);
+}
+
+.bg-nav {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%) !important;
+}
+
+.hero-banner {
+    background: linear-gradient(180deg, var(--gray-100) 0%, var(--white) 100%);
+    padding: var(--spacing-xl) 0;
+}
+
+.banner-card {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.banner-card .card-title {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.banner-card .card-text {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+}
+
+.sidebar-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow);
+}
+
+.sidebar-card .card-title {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--gray-200);
+    padding-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.bg-accent {
+    background-color: var(--accent) !important;
+    color: var(--dark);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    position: relative;
+    padding-left: var(--spacing-md);
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--accent) 0%, var(--primary) 100%);
+    border-radius: 2px;
+}
+
+.process-card {
+    transition: all 0.3s ease;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.process-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.process-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--gray-900);
+}
+
+.news-card {
+    transition: all 0.3s ease;
+    border-radius: var(--border-radius-lg);
+}
+
+.news-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.news-card .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gray-900);
+    line-height: 1.4;
+}
+
+.news-card .card-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.quick-link {
+    transition: all 0.3s ease;
+    border-radius: var(--border-radius-lg);
+}
+
+.quick-link:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    background-color: var(--gray-100);
+}
+
+.quick-link i {
+    transition: all 0.3s ease;
+}
+
+.quick-link:hover i {
+    transform: scale(1.1);
+}
+
+.table {
+    font-size: 0.9rem;
+}
+
+.table thead th {
+    background-color: var(--gray-100);
+    font-weight: 600;
+    color: var(--gray-700);
+    border-bottom: 2px solid var(--primary);
+    padding: var(--spacing-md);
+}
+
+.table tbody td {
+    padding: var(--spacing-md);
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--gray-100);
+}
+
+.bg-footer {
+    background-color: var(--primary-dark) !important;
+}
+
+.bg-footer h5 {
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.bg-footer a {
+    transition: all 0.3s ease;
+}
+
+.bg-footer a:hover {
+    color: var(--accent) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-sm);
+}
+
+.dropdown-item {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: var(--primary-dark);
+        padding: var(--spacing-md);
+        border-radius: var(--border-radius);
+        margin-top: var(--spacing-sm);
+    }
+    
+    .search-form {
+        margin-top: var(--spacing-md);
+    }
+    
+    .title-main {
+        font-size: 1.25rem;
+    }
+    
+    .btn-candidate {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-banner {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .banner-card .card-title {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.25rem;
+    }
+    
+    .top-bar {
+        display: none;
+    }
+    
+    .header-institutional .col-md-2,
+    .header-institutional .col-md-8 {
+        text-align: center;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .header-institutional .col-md-2 {
+        order: 1;
+    }
+    
+    .header-institutional .col-md-8 {
+        order: 2;
+    }
+    
+    .header-institutional .col-md-2:last-child {
+        order: 3;
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .quick-link {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .table {
+        font-size: 0.8rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
